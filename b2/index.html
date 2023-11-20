@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let number1  = +prompt("Nhập số phần tử của mảng");
+    let count = 0;
+    for (let i = 1; i <= number1; i++) {
+        arr1[i] = +prompt("Nhâp phần tử thứ "+ i);
+    }
+    let a = +prompt("nhập phần tử cẩn đếm trong mảng");
+    for (let i = 0; i < number1; i++){
+        if (arr1[i]==a){
+            count++;
+        }
+    }
+    document.write("số phần tử a trong mảng là : " + count);
+
+
+</script>
+</body>
+</html>

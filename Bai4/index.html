@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<script>
+    let total = 0;
+
+    for (let i = 3; i < 500; i++)
+    {
+        let isPrime = true;
+            for (let j = 2; j < i; j++)
+            {
+                if(i % j === 0)
+                {
+                    isPrime = false;
+                }
+            }
+
+        if(isPrime)
+        {
+            total += i;
+        }
+    }
+
+    document.write(total);
+</script>
+</body>
+</html>
