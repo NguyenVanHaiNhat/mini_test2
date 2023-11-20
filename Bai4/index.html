@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bai4</title>
+    <title>bài 4</title>
 </head>
 <body>
 <script>
     let total = 0;
-
-    for (let i = 3; i < 500; i++)
+    for (let i = 0; i < 500; i++)
     {
         let isPrime = true;
+
+        if (i <= 2)
+        {
+            isPrime = false;
+        }
+        else
+        {
             for (let j = 2; j < i; j++)
             {
                 if(i % j === 0)
@@ -18,6 +24,7 @@
                     isPrime = false;
                 }
             }
+        }
 
         if(isPrime)
         {
@@ -25,7 +32,7 @@
         }
     }
 
-    document.write(total);
+    document.write("Tổng các số nguyên dưới 500 là : "+ total);
 </script>
 </body>
 </html>
